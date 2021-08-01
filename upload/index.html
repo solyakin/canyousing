@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload | Can you sing</title>
+    <link rel="stylesheet" href="/audition-form/index.css">
+</head>
+<body>
+    <header id="main-header" data-height-onload="66">
+        <div class=" clearfix et_menu_container">
+            <div class="logo_container">
+                <span class="logo_helper"></span>
+                <a href="../index.html">
+                    <img  alt="can You sing" src="/assets/cus2.png" width="80px" class="lazyload" />
+                </a>
+            </div>
+        </div> <!-- .container -->
+    </header> <!-- #main-header -->
+    <div class="container">
+        <div class="inner-container">
+            <form method="POST" id="upload-form" class="user-form">
+                <p class="form-heading">Fill this form to upload your video.</p>
+                <div class="instructions">
+                    <p class="instruction">Instructions</p>
+                    <ol>
+                        <li>Upload a 2 minutes video(video must not exceed 2 minutes).</li>
+                        <li>Only mp4 format is accepted.</li>
+                        <li>File size should not exceed 10mb.</li>
+                    </ol>
+                </div>
+                
+                <span>
+                    <label for="Name"> Full Name <span class='gfield_required'>*</span></label>
+                    <input type="text" aria-label='First name' id="name" aria-required="true" aria-invalid="false">
+                </span>
+                <span>
+                    <label for="Name">Email <span class='gfield_required'>*</span></label>
+                    <input type="text" aria-label='First name' id="email" aria-required="true" aria-invalid="false">
+                </span>
+                <span>
+                    <label for="Name">Age <span class='gfield_required'>*</span></label>
+                    <input type="text" aria-label='First name' id="age" aria-required="true" aria-invalid="false">
+                </span>
+                <span>
+                    <label for="Name">City <span class='gfield_required'>*</span></label>
+                    <input type="text" aria-label='First name' id="city" aria-required="true" aria-invalid="false">
+                </span>
+                <span>
+                    <input type="file" id="file-upload">
+                </span>
+                <span>
+                    <input type="submit" id="submit-btn">
+                </span>
+            </form>
+    
+            <div class="progress">
+                <p class="progress-msg">Processing your request, please stand by....</p>
+                <progress id="progress-bar" value="" max="100"></progress>
+            </div>
+        </div> 
+        
+    </div>
+    <div id="message-wrapper">
+        <div id="message"></div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+<script src="/index.js"></script>
+</html>

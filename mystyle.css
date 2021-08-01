@@ -1,0 +1,167 @@
+.hero{
+    /* position: absolute; */
+    background-color: black;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/male-bg.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+    padding: 2rem auto;
+}
+.hero-text{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: 5rem;
+}
+.hero-text h1{
+    font-size: 15.5vw;
+    color: gray;
+    text-align: center;
+    line-height: .9;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+    font-weight: 900;
+    letter-spacing: .2px;
+    font-family: 'Bebas Neue', cursive;
+}
+.hero-text h1:hover{
+    color: #BF4205;
+}
+
+.hero-text button{
+    padding: 1rem 2.5rem;
+    border: none;
+    background: #BF4205;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.et_pb_text_1 .et_pb_text_inner h2{
+    color: rgb(247, 223, 87) !important;
+}
+.bg-pink{
+    background-color: yellowgreen !important;
+    border-color: blue !important;
+}
+.mobile_menu_bar{
+    color: goldenrod !important;
+}
+.et_pb_button, .gold-color{
+    background: #BF4205!important;
+    border: 2px solid rgb(247, 223, 87)!important;
+}
+.et_pb_text_inner .color-pink{
+    color :rgb(247, 223, 87)!important;
+}
+.et_pb_column_4_4 .et_pb_text_6 h2{
+    color: rgb(247, 223, 87)!important;
+}
+
+.et_pb_button_module_wrapper .shade-gold{
+    color: goldenrod !important;
+    background: transparent!important;
+}
+.et_pb_section .et_pb_row_1{
+    background-size: contain;
+    background-image: url(/assets/female-singer.jpeg);
+}
+.et_pb_section .et_pb_row_5{
+    background-image: url(/assets/crowd2.jpeg);
+    background-size: contain;
+}
+.et_pb_section_6 .et_pb_column_5{
+    background-image: url(/assets/microphone-bg.jpg);
+}
+.et_pb_section_6 .et_pb_column_6{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/male-singer.jpeg);
+}
+.et_pb_section_6 .et_pb_column_7{
+    background-image: url(/assets/woman-singer.jpeg);
+}
+#page-container > header{
+    background: none!important;
+}
+.et_header_style_fullscreen .et_slide_in_menu_container ul#mobile_menu_slide{
+    display: block!important;
+}
+.et_header_style_fullscreen .et_slide_in_menu_container li a{
+    color: rgb(212, 175, 81)!important;
+}
+.et_slide_in_menu_container #mobile_menu_slide li.current-menu-item a {
+    color: rgb(105, 170, 255) !important;
+}
+.et_header_style_fullscreen .et_slide_in_menu_container span.mobile_menu_bar.et_toggle_fullscreen_menu:before{
+    color: goldenrod!important;
+}
+.et_pb_text_inner .how-to-take{
+    color: #EE6800!important;
+}
+.et_pb_module .winner-prize h3{
+    color: #EE6800!important;
+    font-size: 32px;
+    font-family: 'Bebas Neue', cursive;
+}
+.et_pb_module .winner-prize h3 span{
+    font-size: 14px;
+    color: white!important;
+    font-family: sans-serif;
+}
+.et_pb_button.mb-size{
+    margin-top: 2rem;
+}
+.et_pb_section.et_pb_section_10{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+iframe{
+    transform: translateX(50% 50%);
+    margin: 10px auto;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px){
+    .logo_container img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+    .hero{
+        background-size: cover;
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(/assets/male-bg.jpeg)
+    }
+    .hero-text h1{
+        font-size: 22vw;
+    }
+    iframe{
+        width: 100%;
+        height: 415px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .hero-text{
+        margin: 5rem 1rem;
+    }
+    .hero-text h1{
+        font-size: 32vw;
+        /* color: #f1a27a; */
+        text-align: left;
+        margin: 0px auto;
+        line-height: .9;
+        /* word-break: break-all; */
+        letter-spacing: 0px;
+    }
+    .color-blue{
+        margin-top: 2rem;
+    }
+    .et_pb_button.mb-size{
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+    iframe{
+        width: 100%;
+        height: 315px;
+    }
+}
